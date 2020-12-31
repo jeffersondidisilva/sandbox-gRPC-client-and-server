@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.gRPC.Server", "Sandbox.gRPC.Server\Sandbox.gRPC.Server.csproj", "{9E445AC5-B012-420F-AA8A-A80FF34CC017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.gRPC.Client", "Sandbox.gRPC.Client\Sandbox.gRPC.Client.csproj", "{509C0DDE-D522-4915-8F55-069CA4DED983}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E445AC5-B012-420F-AA8A-A80FF34CC017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E445AC5-B012-420F-AA8A-A80FF34CC017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E445AC5-B012-420F-AA8A-A80FF34CC017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E445AC5-B012-420F-AA8A-A80FF34CC017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{509C0DDE-D522-4915-8F55-069CA4DED983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509C0DDE-D522-4915-8F55-069CA4DED983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509C0DDE-D522-4915-8F55-069CA4DED983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509C0DDE-D522-4915-8F55-069CA4DED983}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

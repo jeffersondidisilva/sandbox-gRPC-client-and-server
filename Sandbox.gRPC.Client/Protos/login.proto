@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "Sandbox.gRPC.Server";
+
+package login;
+
+service LoginService {
+  rpc Login(LoginCommand) returns (LoginResult);
+}
+
+message LoginCommand {
+  string email = 1;
+  string password = 2;
+}
+
+message LoginResult {
+  string token = 1;
+  google.protobuf.Timestamp ExpireDate = 2;
+  bool success = 3;
+}
+

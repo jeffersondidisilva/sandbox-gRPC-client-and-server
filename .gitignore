@@ -1,0 +1,12 @@
+﻿*.suo
+*.user
+.vs/
+bin/
+obj/
+.idea/
+_UpgradeReport_Files/
+packages/
+
+Thumbs.db
+Desktop.ini
+.DS_Store

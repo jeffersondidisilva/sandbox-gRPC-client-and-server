@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Sandbox.gRPC.Server";
+
+package todo;
+
+service TodoService {
+  rpc Get(google.protobuf.Empty) returns (TodoListResult);
+  rpc GetId(Id) returns (TodoResult);
+  rpc Save(TodoCreateCommand) returns (TodoResult);
+  rpc Update(TodoUpdateCommand) returns (TodoResult);
+  rpc Delete(Id) returns (TodoResult);
+}
+
+message Id {
+  int32 Id = 1;
+}
+
+message TodoListResult {
+  repeated TodoResult Items = 1;
+}
+
+message TodoResult {
+  int32 id = 1;
+  string name = 2;
+  bool done = 3;
+}
+
+message TodoCreateCommand {
+  string name = 1;
+}
+
+message TodoUpdateCommand {
+  int32 id = 1;
+  string name = 2;
+  bool done = 3;
+}
+
+
